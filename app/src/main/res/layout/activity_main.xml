@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/linl"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <RadioButton
+            android:id="@+id/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#ff0000"
+            android:buttonTint="@color/buttonColorred"
+            android:typeface="serif"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:text="Red"/>
+        <RadioButton
+            android:id="@+id/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            android:buttonTint="@color/buttonColorBlue"
+            android:typeface="serif"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:text="Blue"/>
+        <RadioButton
+            android:id="@+id/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textStyle="bold|italic"
+            android:textColor="#00ff00"
+            android:textSize="20dp"
+            android:buttonTint="@color/buttonColorGreen"
+            android:text="Green"/>
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom|center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeC"
+            android:text="Change background color"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backtoS"
+            android:text="Back to Standard"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
